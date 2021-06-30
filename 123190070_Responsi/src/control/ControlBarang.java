@@ -154,7 +154,7 @@ public class ControlBarang {
       ps.setInt(4, b.getId());
       int i = ps.executeUpdate();
 
-      return i == 1; // jika change pin success
+      return i == 1; // jika edit data berhasil
       
     } catch (SQLException ex) {
       Logger.getLogger(ControlBarang.class.getName()).log(Level.SEVERE, null, ex);
@@ -173,7 +173,7 @@ public class ControlBarang {
 
       int i = ps.executeUpdate();
 
-      return i == 1; // jika change pin success
+      return i == 1; // jika hapus data berhasil
       
     } catch (SQLException ex) {
       Logger.getLogger(ControlBarang.class.getName()).log(Level.SEVERE, null, ex);
